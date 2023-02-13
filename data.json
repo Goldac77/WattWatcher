@@ -1,0 +1,22 @@
+{
+    "fridges": {
+        "mini": "100 watts",
+        "standard": "200 watts",
+        "double door": "450 watts"
+    },
+    "fan": {
+        "ceiling": "80 watts",
+        "standing": "60 watts"
+    },
+    "kitchen appliances": {
+        "microwave": "50 watts",
+        "dishwasher": "100 watts",
+        "washing machine": "130 watts",
+        "blender": "50 watts"
+    },
+    "television and media": {
+        "television": "80 watts",
+        "home theatre": "40 watts",
+        "sound bar": "30 watts"
+    }
+}
