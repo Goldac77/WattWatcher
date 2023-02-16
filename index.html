@@ -4,10 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Electricity Bill Calculator</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </head>
 <body>
   <div class="container">
@@ -17,7 +16,7 @@
         <form>
           <div class="form-group">
             <label for="appliance">Appliance:</label>
-            <select class="form-control" id="appliance">
+            <select class="form-select" id="appliance">
               <option value="0">-- Select an Appliance --</option>
               <option value="100">Incandescent Lightbulb (100W)</option>
               <option value="60">LED Lightbulb (60W)</option>
@@ -26,11 +25,11 @@
               <option value="2000">Electric Kettle (2000W)</option>
             </select>
           </div>
-          <div class="form-group">
+          <div class="form-group mt-2">
             <label for="hours">Number of hours used per day:</label>
             <input type="number" class="form-control" id="hours" placeholder="Enter the number of hours used per day">
           </div>
-          <button type="button" class="btn btn-primary" onclick="addAppliance()">Add Appliance</button>
+          <button type="button" class="btn btn-primary mt-2" onclick="addAppliance()">Add Appliance</button>
         </form>
       </div>
       <div class="col-md-6">
