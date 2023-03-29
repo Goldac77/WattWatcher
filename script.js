@@ -1,5 +1,7 @@
 var appliances = [];
-var ratePerUnit = 0.10;
+var ratePerUnit = 0.369;
+var totalBill = document.getElementById('total-bill');
+let totalBillAmount = 0; 
 
 //function to add chosen appliance to the list
 function addAppliance() {
@@ -27,9 +29,11 @@ function updateApplianceList() {
   list.innerHTML = "" //refresh the list
 
   appliances.forEach(item => {
+    totalBillAmount += item.bill;
     list.innerHTML += `
     <li>${item.name} (${item.wattage}W, ${item.hours} hours per day) - ${item.bill.toFixed(2)} USD </li>
     `
   })
+  totalBill.innerHTML = totalBillAmount.toFixed(2);
   console.log(appliances)
 }
