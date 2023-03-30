@@ -35,7 +35,6 @@ function updateApplianceList() {
     `
   })
   totalBill.innerHTML = totalBillAmount.toFixed(2);
-  console.log(appliances)
 }
 
 function showAdvice() {
